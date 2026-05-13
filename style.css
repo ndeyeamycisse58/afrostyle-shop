@@ -262,6 +262,28 @@ nav ul a{
         .boutons{
             flex-direction: column;
         }
+        .footer-contener{
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        .footer-box{
+            margin-bottom: 30px;
+        }
+        .footer{
+            padding: 50px 20px;
+        }
+    }
+
+    @media(max-width:992px){
+        .hero h1{
+            font-size: 50px;
+        }
+        .hero p{
+            font-size: 18px;
+        }
+        .produits-contener{
+            grid-template-columns: repeat(2,1fr);
+        }
     }
 
     /* Entête collection */
@@ -389,16 +411,36 @@ nav ul a{
 /* Responsive */
 @media(max-width:768px){
     nav{
-        flex-direction: column;
-        gap: 15px;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5%;
     }
 
     nav ul{
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .collections h2{
-        font-size: 40px;
+    .collection-contener{
+        grid-template-columns: 1fr;
+    }
+    .footer-contener{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-box{
+        margin-bottom: 30px;
+    }
+    .footer{
+        padding: 50px 20px;
+    }
+}
+
+@media(max-width:992px){
+    .collection-contener{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
@@ -542,6 +584,12 @@ nav ul a{
 }
 
 /* Responsive */
+@media(max-width:992px){
+    .produit-contener{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
 @media(max-width:768px){
     nav{
         flex-direction: column;
@@ -551,18 +599,22 @@ nav ul a{
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    .hero h1{
-        font-size: 40px;
+    .produit-contener{
+        grid-template-columns: 1fr;
+    }
+    .footer-contener{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-box{
+        margin-bottom: 30px;
+    }
+    .footer{
+        padding: 50px 20px;
     }
 
-    .herop{
-        font-size: 16px;
-    }
 
-    .produit h2{
-        font-size: 35px;
-    }
+
 }
 
 /* Entête about */
@@ -672,6 +724,23 @@ nav ul{
 .propos h2{
     font-size: 35px;
 }
+
+.footer-contener{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-box{
+        margin-bottom: 30px;
+    }
+    .footer{
+        padding: 50px 20px;
+    }
+}
+
+@media(max-width:992px){
+    .propos-contener{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 /* conctact forme */
@@ -781,5 +850,16 @@ button:hover{
     .contact-forme h1{
         font-size: 40px;
     }
+    .footer-contener{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-box{
+        margin-bottom: 30px;
+    }
+    .footer{
+        padding: 50px 20px;
+    }
+
 }
 
